@@ -1,14 +1,13 @@
 /*
 ┌─────────────────────────────────────────────────────
-│Source.File
+│Server.Interface
 │─────────────────────────────────────────────────────
-│操作文件
+│服务器对外接口
 └─────────────────────────────────────────────────────
 */
-import * as fs from 'fs';
-
-export default class File{
-  static async read():Promise<string>{
+import Server from './Server';
+export default class Interface{
+  public static async getStatus():Promise<object>{
     
   }
 }

@@ -1,14 +1,18 @@
 /*
 ┌─────────────────────────────────────────────────────
-│Source.File
+│Server.Server
 │─────────────────────────────────────────────────────
-│操作文件
+│服务器总程序
 └─────────────────────────────────────────────────────
 */
-import * as fs from 'fs';
+import Interface from './Interface';
 
-export default class File{
-  static async read():Promise<string>{
+export default class Server{
+  private readonly network:{ip:string,port:number};
+  constructor(config:{ip:string,port:number}){
     
+  }
+  public static getInterface():Interface{
+    return new Interface();
   }
 }

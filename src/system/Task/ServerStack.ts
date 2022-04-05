@@ -1,14 +1,14 @@
 /*
 ┌─────────────────────────────────────────────────────
-│Source.File
+│File.ServerStack
 │─────────────────────────────────────────────────────
-│操作文件
+│服务器公共堆栈
 └─────────────────────────────────────────────────────
 */
-import * as fs from 'fs';
 
-export default class File{
-  static async read():Promise<string>{
+export default class Stack{
+  private stack:Array<string|boolean|number|Function>;
+  constructor(){
     
   }
 }

@@ -1,14 +1,14 @@
 /*
 ┌─────────────────────────────────────────────────────
-│Source.File
+│Application.App
 │─────────────────────────────────────────────────────
-│操作文件
+│程序基类
 └─────────────────────────────────────────────────────
 */
-import * as fs from 'fs';
 
-export default class File{
-  static async read():Promise<string>{
+export default abstract class App{
+  constructor(){
     
   }
+  abstract main():number;
 }
