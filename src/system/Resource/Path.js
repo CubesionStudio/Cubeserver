@@ -1,13 +1,23 @@
 /*
 ┌─────────────────────────────────────────────────────
-│Model.Base
+│Source.Path
 │─────────────────────────────────────────────────────
-│所有模型均要继承本类
+│组装与解析路径
 └─────────────────────────────────────────────────────
 */
 
-export default abstract class ModelBase{
-  public constructure:any;
-  constructor(){}
-  public abstract getData():object;
+/**
+ * @class
+*/
+class Path{
+  /**
+   * 组装路径
+   * @param {string[]} args
+   * @returns {string}
+  */
+  static join(...args){
+    
+  }
 }
+
+module.exports = Path;
